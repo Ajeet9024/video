@@ -4,15 +4,9 @@
         <title>Redeem Page</title>
         <style>
             body {
-              margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to bottom, #6a11cb, #2575fc);
-            color: #fff;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center; /* Set background color */
+              height: 100vh;
+                margin: 0;
+                background-color: #f4f4f4; /* Set background color */
             }
 
             #numberBox {
@@ -45,6 +39,22 @@
             button:hover {
                 background-color: #191970; /* Change button background color on hover */
             }
+            /* Mobile Styling */
+        @media (max-width: 480px) {
+            h2, h1 {
+                font-size: 1.5rem;
+            }
+
+            input, select {
+                padding: 10px;
+                font-size: 1rem;
+            }
+
+            button {
+                font-size: 1.1rem;
+                padding: 12px 18px;
+            }
+        }
         </style>
     </head>
     <body>
