@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Redeem Page</title>
+        <style>
+            body {
+                height: 100vh;
+                margin: 0;
+                background-color: #f4f4f4; /* Set background color */
+            }
+
+            #numberBox {
+                margin-top: 20px;
+                padding: 25px; /* Adjust the padding to increase the size of the box */
+            }
+
+            label {
+                font-size: 22px; /* Set label font size */
+                color: #00008B; /* Set label color */
+            }
+
+            input, select {
+                width: 100%; /* Make input and select fill the container width */
+                padding: 08px; /* Add padding to input and select */
+                margin-bottom: 18px;
+                font-size: 16px; /* Set input and select font size */
+            }
+
+            button {
+                background-color: #3498db; /* Set button background color */
+                color: #fff; /* Set button text color */
+                padding: 10px 20px; /* Set button padding */
+                font-size: 19px; /* Set button font size */
+                border: none; /* Remove button border */
+                border-radius: 5px; /* Add rounded corners to button */
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #191970; /* Change button background color on hover */
+            }
+        </style>
+    </head>
+    <body>
+        <figure class="wp-block-image size-full is-resized">
+            <img decoding="async" src="https://earnread.com/wp-content/uploads/2024/08/Service-Active.jpg" alt="" class="wp-image-1374" style="width:138px;height:auto"/>
+        </figure>
+        <div id="container">
+            <center><h3><b>Free Insta Followers</b></h3></center>
+            <div class="container">
+                <div class="separator" style="clear: both;">
+                    <center>
+                        <a style="display: block; padding: 1em 0;">
+                            <img decoding="async" alt="Instagram icon" border="0" data-original-height="150" data-original-width="150" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" width="150">
+                        </a>
+                    </center>
+                </div>
+                <div id="numberBox">
+                    <center><label for="numberInput">Enter Your Insta I&#8217;d:</label></center>
+                    <input id="numberInput" name="numberInput">
+                    <br>
+                    <center><label for="selectOption">Select Followers</label></center>
+                    <select id="selectOption" name="selectOption">
+                        <option value="option1">Select Followers</option>
+                        <option value="option2">1K Followers</option>
+                        <option value="option3">3K Followers</option>
+                        <option value="option4">5K Followers</option>
+                        <option value="option5">10K Followers</option>
+                        <option value="option6">20K Followers</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    <center><br>
+                    <button onclick="redeemNow()"><a href="yt.html">Verify Now</a></button>
+                </div></center>
+            </div>
+        </div>
+
+        <script>
+            function redeemNow() {
+                var characterId = document.getElementById("numberInput").value;
+                if (characterId.trim() !== "") {
+                    window.location.href = "next.html"; // Remove the trailing slash
+                } else {
+                    alert("Enter Your Insta I'd");
+                }
+            }
+        </script>
+    </body>
+</html>
